@@ -4,16 +4,16 @@
 #
 Name     : libpinyin
 Version  : 0.9.93
-Release  : 1
-URL      : http://downloads.sourceforge.net/libpinyin/libpinyin/libpinyin-0.9.93.tar.gz
-Source0  : http://downloads.sourceforge.net/libpinyin/libpinyin/libpinyin-0.9.93.tar.gz
+Release  : 2
+URL      : https://sourceforge.net/projects/libpinyin/files/libpinyin/libpinyin-0.9.93.tar.gz
+Source0  : https://sourceforge.net/projects/libpinyin/files/libpinyin/libpinyin-0.9.93.tar.gz
 Summary  : Library to deal with pinyin
 Group    : Development/Tools
 License  : GPL-2.0
-Requires: libpinyin-bin
-Requires: libpinyin-lib
-Requires: libpinyin-license
-Requires: libpinyin-man
+Requires: libpinyin-bin = %{version}-%{release}
+Requires: libpinyin-lib = %{version}-%{release}
+Requires: libpinyin-license = %{version}-%{release}
+Requires: libpinyin-man = %{version}-%{release}
 BuildRequires : db-dev
 BuildRequires : pkgconfig(glib-2.0)
 
@@ -25,8 +25,8 @@ The libpinyin project aims to provide the algorithms core for intelligent senten
 %package bin
 Summary: bin components for the libpinyin package.
 Group: Binaries
-Requires: libpinyin-license
-Requires: libpinyin-man
+Requires: libpinyin-license = %{version}-%{release}
+Requires: libpinyin-man = %{version}-%{release}
 
 %description bin
 bin components for the libpinyin package.
@@ -35,9 +35,9 @@ bin components for the libpinyin package.
 %package dev
 Summary: dev components for the libpinyin package.
 Group: Development
-Requires: libpinyin-lib
-Requires: libpinyin-bin
-Provides: libpinyin-devel
+Requires: libpinyin-lib = %{version}-%{release}
+Requires: libpinyin-bin = %{version}-%{release}
+Provides: libpinyin-devel = %{version}-%{release}
 
 %description dev
 dev components for the libpinyin package.
@@ -46,7 +46,7 @@ dev components for the libpinyin package.
 %package lib
 Summary: lib components for the libpinyin package.
 Group: Libraries
-Requires: libpinyin-license
+Requires: libpinyin-license = %{version}-%{release}
 
 %description lib
 lib components for the libpinyin package.
@@ -76,7 +76,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1536452211
+export SOURCE_DATE_EPOCH=1545264404
 %configure --disable-static
 make  %{?_smp_mflags}
 
@@ -88,10 +88,10 @@ export no_proxy=localhost,127.0.0.1,0.0.0.0
 make VERBOSE=1 V=1 %{?_smp_mflags} check
 
 %install
-export SOURCE_DATE_EPOCH=1536452211
+export SOURCE_DATE_EPOCH=1545264404
 rm -rf %{buildroot}
-mkdir -p %{buildroot}/usr/share/doc/libpinyin
-cp COPYING %{buildroot}/usr/share/doc/libpinyin/COPYING
+mkdir -p %{buildroot}/usr/share/package-licenses/libpinyin
+cp COPYING %{buildroot}/usr/share/package-licenses/libpinyin/COPYING
 %make_install
 
 %files
@@ -134,11 +134,11 @@ cp COPYING %{buildroot}/usr/share/doc/libpinyin/COPYING
 /usr/lib64/libpinyin.so.4.0.0
 
 %files license
-%defattr(-,root,root,-)
-/usr/share/doc/libpinyin/COPYING
+%defattr(0644,root,root,0755)
+/usr/share/package-licenses/libpinyin/COPYING
 
 %files man
-%defattr(-,root,root,-)
+%defattr(0644,root,root,0755)
 /usr/share/man/man1/gen_binary_files.1
 /usr/share/man/man1/gen_unigram.1
 /usr/share/man/man1/import_interpolation.1
