@@ -4,7 +4,7 @@
 #
 Name     : libpinyin
 Version  : 2.2.2
-Release  : 5
+Release  : 6
 URL      : https://sourceforge.net/projects/libpinyin/files/libpinyin/libpinyin-2.2.2.tar.gz
 Source0  : https://sourceforge.net/projects/libpinyin/files/libpinyin/libpinyin-2.2.2.tar.gz
 Summary  : Library to deal with pinyin
@@ -14,8 +14,9 @@ Requires: libpinyin-bin = %{version}-%{release}
 Requires: libpinyin-lib = %{version}-%{release}
 Requires: libpinyin-license = %{version}-%{release}
 Requires: libpinyin-man = %{version}-%{release}
-BuildRequires : db-dev
+BuildRequires : kyotocabinet-dev
 BuildRequires : pkgconfig(glib-2.0)
+BuildRequires : pkgconfig(kyotocabinet)
 
 %description
 libpinyin
@@ -26,7 +27,6 @@ The libpinyin project aims to provide the algorithms core for intelligent senten
 Summary: bin components for the libpinyin package.
 Group: Binaries
 Requires: libpinyin-license = %{version}-%{release}
-Requires: libpinyin-man = %{version}-%{release}
 
 %description bin
 bin components for the libpinyin package.
@@ -37,7 +37,9 @@ Summary: dev components for the libpinyin package.
 Group: Development
 Requires: libpinyin-lib = %{version}-%{release}
 Requires: libpinyin-bin = %{version}-%{release}
+Requires: libpinyin-man = %{version}-%{release}
 Provides: libpinyin-devel = %{version}-%{release}
+Requires: libpinyin = %{version}-%{release}
 
 %description dev
 dev components for the libpinyin package.
@@ -76,8 +78,8 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1548094177
-%configure --disable-static
+export SOURCE_DATE_EPOCH=1551153895
+%configure --disable-static --with-dbm=KyotoCabinet
 make  %{?_smp_mflags}
 
 %check
@@ -88,7 +90,7 @@ export no_proxy=localhost,127.0.0.1,0.0.0.0
 make VERBOSE=1 V=1 %{?_smp_mflags} check
 
 %install
-export SOURCE_DATE_EPOCH=1548094177
+export SOURCE_DATE_EPOCH=1551153895
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/libpinyin
 cp COPYING %{buildroot}/usr/share/package-licenses/libpinyin/COPYING
