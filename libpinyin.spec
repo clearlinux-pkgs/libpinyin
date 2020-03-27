@@ -4,7 +4,7 @@
 #
 Name     : libpinyin
 Version  : 2.3.0
-Release  : 7
+Release  : 8
 URL      : https://sourceforge.net/projects/libpinyin/files/libpinyin/libpinyin-2.3.0.tar.gz
 Source0  : https://sourceforge.net/projects/libpinyin/files/libpinyin/libpinyin-2.3.0.tar.gz
 Summary  : Library to deal with pinyin
