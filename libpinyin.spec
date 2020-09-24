@@ -4,7 +4,7 @@
 #
 Name     : libpinyin
 Version  : 2.4.91
-Release  : 9
+Release  : 10
 URL      : https://sourceforge.net/projects/libpinyin/files/libpinyin/libpinyin-2.4.91.tar.gz
 Source0  : https://sourceforge.net/projects/libpinyin/files/libpinyin/libpinyin-2.4.91.tar.gz
 Summary  : Library to deal with pinyin
