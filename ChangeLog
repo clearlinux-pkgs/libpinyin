@@ -1,3 +1,145 @@
+commit d1a47e83f648d987c3cf20e424a63b5384a0861f
+Author: Peng Wu <alexepico@gmail.com>
+Date:   2020-10-15 13:21:39 +0800
+
+    Fixes typo
+
+M	configure.ac
+
+commit 78450c31880245a4f87c83b80ac0fc306a96104e
+Author: Peng Wu <alexepico@gmail.com>
+Date:   2020-10-14 10:52:04 +0800
+
+    Fixes Berkeley DB cursor usage
+
+M	src/storage/chewing_large_table2_bdb.cpp
+M	src/storage/flexible_ngram_bdb.h
+M	src/storage/ngram_bdb.cpp
+M	src/storage/phrase_large_table3_bdb.cpp
+
+commit 31b73dd2c05d2b258c251251765ade141a1eb3fd
+Author: Peng Wu <alexepico@gmail.com>
+Date:   2020-10-14 09:57:47 +0800
+
+    import table.conf.in
+
+A	data/table.conf.in
+
+commit b21bfdab7b32375239144899c1666b3ae41ed9c7
+Author: Peng Wu <alexepico@gmail.com>
+Date:   2020-10-14 09:53:32 +0800
+
+    Use model19.text.tar.gz
+
+M	data/CMakeLists.txt
+M	data/Makefile.am
+
+commit e169b3d22c215ba1485e110a194da904a86751e8
+Author: Peng Wu <alexepico@gmail.com>
+Date:   2020-10-10 09:53:04 +0800
+
+    Fixes copy_bdb function
+
+M	src/storage/bdb_utils.h
+
+commit b0bfcf10a1e03d89061054693b803d199c7506e1
+Author: Peng Wu <alexepico@gmail.com>
+Date:   2020-09-27 16:55:36 +0800
+
+    Update table.conf path in utils
+
+M	utils/storage/gen_binary_files.cpp
+M	utils/storage/import_interpolation.cpp
+M	utils/training/gen_unigram.cpp
+
+commit 8e97484c0bafa2caebf87c775892f3537c89c843
+Author: Peng Wu <alexepico@gmail.com>
+Date:   2020-09-27 16:54:38 +0800
+
+    Update data/Makefile.am
+
+M	data/Makefile.am
+
+commit 50b8799f78a4bd92c44fb4931eac2afb2a1d1aba
+Author: Peng Wu <alexepico@gmail.com>
+Date:   2020-09-27 14:34:24 +0800
+
+    Fixes test_ngram.cpp
+
+M	tests/storage/test_ngram.cpp
+
+commit 932ff0514256570e75d049d2e5d0881b4421bb05
+Author: Peng Wu <alexepico@gmail.com>
+Date:   2020-09-27 14:09:37 +0800
+
+    Use model18.text.tar.gz
+
+M	data/CMakeLists.txt
+M	data/Makefile.am
+
+commit bd53f5a59af5aaafa28a2fe7a9476b825c4c8104
+Author: Peng Wu <alexepico@gmail.com>
+Date:   2020-09-27 13:23:59 +0800
+
+    Update NEWS
+
+M	NEWS
+
+commit 3674b1df8e170f74a39ec007a096d245c4cbc9d0
+Author: Peng Wu <alexepico@gmail.com>
+Date:   2020-09-27 13:20:42 +0800
+
+    bump version 2.4.92
+
+M	configure.ac
+
+commit 51f0c3d5666522c6a2ea83eee46b19afa4d9279d
+Author: Peng Wu <alexepico@gmail.com>
+Date:   2020-09-27 13:19:32 +0800
+
+    Update configure.ac
+
+M	configure.ac
+
+commit 5e6c16f7fe72408fd0a96087f8513ca70732dd93
+Author: Peng Wu <alexepico@gmail.com>
+Date:   2020-09-27 13:18:54 +0800
+
+    support database format in table.conf
+
+M	src/storage/table_info.cpp
+M	src/storage/table_info.h
+
+commit 301552bcfae6a3af5721ee98750cd364e0f6d406
+Author: Peng Wu <alexepico@gmail.com>
+Date:   2020-09-23 14:09:01 +0800
+
+    Improve pinyin_save function
+
+M	src/pinyin.cpp
+
+commit 47305f5203d99089e7a04d797853b09845cfcc49
+Author: Peng Wu <alexepico@gmail.com>
+Date:   2020-09-23 13:48:20 +0800
+
+    Use Kyoto Cabinet snapshot feature
+
+M	src/storage/chewing_large_table2_kyotodb.cpp
+M	src/storage/kyotodb_utils.h
+M	src/storage/ngram_kyotodb.cpp
+M	src/storage/phrase_large_table3_kyotodb.cpp
+
+commit 7a83a153634428aa14e9baafcb5d585e85769ec3
+Author: Ruei-Yuan Lu <RueiYuan.Lu@gmail.com>
+Date:   2020-09-06 13:07:13 +0800
+
+    Fix missing dynamic symbols in libzhuyin.so
+    
+    * zhuyin_get_zhuyin_key
+    * zhuyin_get_zhuyin_key_rest
+
+M	src/zhuyin.h
+
 commit 1a42a778a34c23efae8cfdb4b8a1649fe08cf8fd
 Author: Peng Wu <alexepico@gmail.com>
 Date:   2020-08-25 15:41:03 +0800
