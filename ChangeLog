@@ -1,3 +1,106 @@
+commit 19d8e9a1e577fb0d93dc9fb51ea982d677331755
+Author: Peng Wu <alexepico@gmail.com>
+Date:   2020-12-15 11:23:09 +0800
+
+    Update NEWS
+
+M	NEWS
+
+commit 64be96f11386533d1e7184d96fad25f73741d39e
+Author: Peng Wu <alexepico@gmail.com>
+Date:   2020-12-15 11:19:27 +0800
+
+    bump version 2.6.0
+
+M	configure.ac
+
+commit ccf9c76a38c8a784535499d806843445e1ad385e
+Author: Weixuan XIAO <veyx.shaw@gmail.com>
+Date:   2020-11-22 19:10:02 +0100
+
+    Replace -version-script flag with -exported_symbols_list for LLVM
+    
+    Detect whether $CXX is clang with gcc alias.
+    
+    Use -exported_symbols_list under Clang/LLVM env
+
+M	configure.ac
+M	src/Makefile.am
+A	src/libpinyin.exp
+A	src/libzhuyin.exp
+
+commit 76108f9b60e521af2d716b22dd5dd99d62609e72
+Author: Weixuan XIAO <veyx.shaw@gmail.com>
+Date:   2020-11-22 19:02:36 +0100
+
+    Fix delimiter for reading table files on macOS
+    
+    On macOS under llvm/clang++, the default delimiter for format string is
+    weird: it cannot read full CJK characters from the table files.
+    
+    This patch adds macOS-specified code to make "\t" and " " the implicit
+    delimiter.
+    
+    Ref:
+    https://stackoverflow.com/questions/12885628/changing-the-scanf-delimiter
+
+M	src/storage/chewing_large_table.cpp
+M	src/storage/chewing_large_table2.cpp
+M	src/storage/phrase_index.cpp
+M	src/storage/phrase_large_table2.cpp
+M	src/storage/phrase_large_table3.cpp
+
+commit f1e88a707de818277e937fb77d3d9c737e470377
+Author: Peng Wu <alexepico@gmail.com>
+Date:   2020-11-24 15:28:53 +0800
+
+    Update CMakeLists.txt
+
+M	CMakeLists.txt
+M	data/CMakeLists.txt
+
+commit c47bb8d16597eb025f355d6efd45f16c2f45a730
+Author: Peng Wu <alexepico@gmail.com>
+Date:   2020-11-17 10:49:52 +0800
+
+    bump version 2.4.93
+
+M	configure.ac
+
+commit c54a9a340c95b1d781063422bab35ebe14e98fec
+Author: Peng Wu <alexepico@gmail.com>
+Date:   2020-11-17 10:45:38 +0800
+
+    Include database format in libpinyin.pc and libzhuyin.pc
+
+M	libpinyin.pc.in
+M	libzhuyin.pc.in
+
+commit 2a63eecb918336aa6134c03277d50691cbbee392
+Author: Peng Wu <alexepico@gmail.com>
+Date:   2020-11-10 10:29:00 +0800
+
+    update special_table.h
+
+M	src/storage/special_table.h
+
+commit 7f44da7ac05286349e56f862ee21d012ad4e69b5
+Author: Peng Wu <alexepico@gmail.com>
+Date:   2020-11-10 10:26:39 +0800
+
+    update scripts2
+
+A	scripts2/specials.txt
+M	scripts2/specialtable.py
+
+commit 9bb4577a42da7bea06ce1d9f0771950e326ba6e6
+Author: Peng Wu <alexepico@gmail.com>
+Date:   2020-10-28 16:05:57 +0800
+
+    Fixes typo again
+
+M	configure.ac
+
 commit d1a47e83f648d987c3cf20e424a63b5384a0861f
 Author: Peng Wu <alexepico@gmail.com>
 Date:   2020-10-15 13:21:39 +0800
