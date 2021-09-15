@@ -1,3 +1,114 @@
+commit e6e43a433633460ccc0d821cf269cd85b3f4841d
+Author: Peng Wu <alexepico@gmail.com>
+Date:   2021-09-15 11:14:38 +0800
+
+    Update special_table.h
+
+M	src/storage/special_table.h
+
+commit 66a20b1bebb94431104f02f396a731598a5a1b21
+Author: Peng Wu <alexepico@gmail.com>
+Date:   2021-09-15 11:14:01 +0800
+
+    Update scripts2/specials.txt
+
+M	scripts2/specials.txt
+
+commit a3add2b676c5c3b9cf05bcaadfe6b26cc51647ad
+Author: Peng Wu <alexepico@gmail.com>
+Date:   2021-09-15 11:02:44 +0800
+
+    Update NEWS
+
+M	NEWS
+
+commit 2bbde69defa7239dc6171002e7d359951be9736d
+Author: Peng Wu <alexepico@gmail.com>
+Date:   2021-05-20 07:58:33 +0800
+
+    Improve pinyin_remember_user_input function for incomplete pinyin
+
+M	src/pinyin.cpp
+
+commit a4bee4593faad577c85fa2d7296da480966bd8a7
+Author: Peng Wu <alexepico@gmail.com>
+Date:   2021-05-17 15:14:11 +0800
+
+    Improve pinyin_remember_user_input function
+
+M	src/pinyin.cpp
+
+commit f12961453c16846b9902a339bf2ff44139ab5f7e
+Author: Peng Wu <alexepico@gmail.com>
+Date:   2021-05-10 12:37:46 +0800
+
+    Fixes memory leak in pinyin_guess_predicted_candidates function
+
+M	src/pinyin.cpp
+
+commit a97167304e5ff711c335f0a29f535bd8c7cddc04
+Author: Peng Wu <alexepico@gmail.com>
+Date:   2021-05-10 12:21:00 +0800
+
+    Bump version 2.6.1
+
+M	configure.ac
+
+commit 1056564e95713313b16fce8863e5ad20685c27d1
+Author: Peng Wu <alexepico@gmail.com>
+Date:   2021-03-25 12:31:37 +0800
+
+    Update full pinyin parser code
+
+M	src/storage/pinyin_parser2.cpp
+
+commit cf0cdf8bf46a6d72f7069a5f787ebc51a9b8bc34
+Author: Zhangyuan Nie <yuan@znie.org>
+Date:   2021-03-24 03:46:40 -0400
+
+    update special_table.h
+
+M	src/storage/special_table.h
+
+commit 62ce1215ded656ebe571c6db8735d123ed34ed64
+Author: Zhangyuan Nie <yuan@znie.org>
+Date:   2021-03-24 03:20:30 -0400
+
+    update script2/specials.txt
+
+M	scripts2/specials.txt
+
+commit 68590829859b9a38e3b22c0c8d316e216dd292e9
+Author: Andreas Cord-Landwehr <cordlandwehr@kde.org>
+Date:   2021-01-04 20:55:47 +0100
+
+    Fix header installation path
+    
+    Adapt installation directory to match pc file.
+
+M	CMakeLists.txt
+
+commit 76a20ae5801f6002d08fd698d06f447cae112d6f
+Author: Weixuan XIAO <veyx.shaw@gmail.com>
+Date:   2020-12-21 19:54:24 +0100
+
+    Check LLVM LD instead of Clang to determine LDFLAG
+    
+    Fix exported symbols according to the suggestion in
+    https://github.com/libpinyin/libpinyin/pull/138
+
+M	configure.ac
+M	src/Makefile.am
+
+commit dc25170394ed67dfeb0803d07ab947d1a8889f81
+Author: Weixuan XIAO <veyx.shaw@gmail.com>
+Date:   2020-12-21 19:49:07 +0100
+
+    Append an empty line to avoid ld warning
+
+M	src/libpinyin.exp
+M	src/libzhuyin.exp
+
 commit 19d8e9a1e577fb0d93dc9fb51ea982d677331755
 Author: Peng Wu <alexepico@gmail.com>
 Date:   2020-12-15 11:23:09 +0800
