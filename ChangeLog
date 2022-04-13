@@ -1,3 +1,52 @@
+commit 3cc27bd3759a6791c6fbdb0ad3a2f6e2dd07260e
+Author: Peng Wu <alexepico@gmail.com>
+Date:   2022-04-13 14:04:05 +0800
+
+    Bump version 2.6.2
+
+M	configure.ac
+
+commit 5c8b2255aabbdaeb6b804ff3e6344b0ae3ea99d2
+Author: Peng Wu <alexepico@gmail.com>
+Date:   2022-04-13 14:02:44 +0800
+
+    Update NEWS
+
+M	NEWS
+
+commit 70c267a9cc8c260e995cf5a25895f7455cfb6aba
+Author: Peng Wu <alexepico@gmail.com>
+Date:   2022-03-30 14:34:22 +0800
+
+    Switch from GrassDB to ProtoTreeDB
+
+M	src/storage/chewing_large_table2_kyotodb.cpp
+M	src/storage/phrase_large_table3_kyotodb.cpp
+
+commit 3d3d2760a5149fb19c303f666d0ef2f09ff4da23
+Author: Peng Wu <alexepico@gmail.com>
+Date:   2021-12-10 12:55:22 +0800
+
+    Create make-check.yml
+
+A	.github/workflows/make-check.yml
+
+commit 181544e868a829f8906c752c9840b378d7f75d54
+Author: Peng Wu <alexepico@gmail.com>
+Date:   2021-12-10 17:45:18 +0800
+
+    Update tests/Makefile.am
+
+M	tests/Makefile.am
+
+commit e78663410046e74ddb0ee2ecb7281b846ae03513
+Author: Caleb Xu <calebcenter@live.com>
+Date:   2021-09-17 08:12:37 -0400
+
+    Fix libzhuyin linkage when using LLVM linker
+
+M	src/Makefile.am
+
 commit e6e43a433633460ccc0d821cf269cd85b3f4841d
 Author: Peng Wu <alexepico@gmail.com>
 Date:   2021-09-15 11:14:38 +0800
