@@ -4,7 +4,7 @@
 #
 Name     : libpinyin
 Version  : 2.7.92
-Release  : 15
+Release  : 16
 URL      : https://sourceforge.net/projects/libpinyin/files/libpinyin/libpinyin-2.7.92.tar.gz
 Source0  : https://sourceforge.net/projects/libpinyin/files/libpinyin/libpinyin-2.7.92.tar.gz
 Summary  : Library to deal with pinyin
