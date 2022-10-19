@@ -1,3 +1,319 @@
+commit 872bfa1532e4f7f95b63f03efac2d0b2dc601374
+Author: Peng Wu <alexepico@gmail.com>
+Date:   2022-10-19 14:03:42 +0800
+
+    Bump version 2.7.92
+
+M	configure.ac
+
+commit a962fcce78d15ac126164072800381f4e6c376d5
+Author: Peng Wu <alexepico@gmail.com>
+Date:   2022-10-19 14:03:11 +0800
+
+    Update NEWS
+
+M	NEWS
+
+commit 5efed4c080ac02632a66f0e95e8ae6eb69441fab
+Author: Peng Wu <alexepico@gmail.com>
+Date:   2022-10-19 14:02:20 +0800
+
+    Update pinyin.h for compatibility
+
+M	src/pinyin.h
+
+commit 2f52299e7661939965d27b57d99d7250035990f5
+Author: Peng Wu <alexepico@gmail.com>
+Date:   2022-10-13 13:37:36 +0800
+
+    Update configure.ac
+
+M	configure.ac
+
+commit c486004508be0081440df76bdee722381f63642f
+Author: Peng Wu <alexepico@gmail.com>
+Date:   2022-10-12 14:54:06 +0800
+
+    Update NEWS
+
+M	NEWS
+
+commit 9a0b828affd447aed97b571261de8409d1143d18
+Author: Peng Wu <alexepico@gmail.com>
+Date:   2022-09-26 14:27:40 +0800
+
+    Update pinyin_choose_candidate function
+
+M	src/pinyin.cpp
+
+commit dc17f530f01b0376343beaea4513ae1855620d21
+Author: Peng Wu <alexepico@gmail.com>
+Date:   2022-09-26 11:41:02 +0800
+
+    Improve pinyin_guess_predicted_candidates function
+
+M	src/pinyin.cpp
+
+commit c694fbb4ebbaf923658a2e2c0336c711ca70f34f
+Author: Peng Wu <alexepico@gmail.com>
+Date:   2022-09-23 16:18:27 +0800
+
+    Update pinyin_choose_candidate function
+
+M	src/pinyin.cpp
+
+commit 0d94acd57cefd09991d6df7887a2d68d1366a6c6
+Author: Peng Wu <alexepico@gmail.com>
+Date:   2022-09-23 12:50:25 +0800
+
+    Bump version 2.7.91
+
+M	configure.ac
+
+commit c1302b9a5bfc111508ae0c373af78017a3723101
+Author: Peng Wu <alexepico@gmail.com>
+Date:   2022-09-22 11:33:16 +0800
+
+    Refactor sort_option_t enum
+
+M	src/pinyin.cpp
+M	src/pinyin.h
+M	tests/test_pinyin.cpp
+
+commit 698c01539cc8636dd79bd12a49e2d9a960209f98
+Author: Peng Wu <alexepico@gmail.com>
+Date:   2022-09-20 17:24:23 +0800
+
+    Support longer candidate
+
+M	src/pinyin.cpp
+M	src/pinyin.h
+M	src/storage/chewing_large_table2_kyotodb.cpp
+
+commit baedddb15b41d7d6dbe1030195c0b343159a3b6c
+Author: Peng Wu <alexepico@gmail.com>
+Date:   2022-09-14 17:45:36 +0800
+
+    Write search_suggestion_with_matrix function
+
+M	src/pinyin.cpp
+M	src/storage/phonetic_key_matrix.cpp
+M	src/storage/phonetic_key_matrix.h
+
+commit 95d7370ba98e9a669206e1c4709dc62fa9357f72
+Author: Peng Wu <alexepico@gmail.com>
+Date:   2022-09-09 12:13:24 +0800
+
+    Write FacadeChewingTable2::search_suggestion method
+
+M	src/storage/facade_chewing_table2.h
+
+commit 84221ba84701faccc7849becb5a5feca829f56d7
+Author: Peng Wu <alexepico@gmail.com>
+Date:   2022-09-08 15:57:19 +0800
+
+    Write ChewingLargeTable2::search_suggesion method for Kyoto Cabinet
+
+M	src/storage/chewing_large_table2_kyotodb.cpp
+M	src/storage/chewing_large_table2_kyotodb.h
+M	src/storage/phrase_large_table3_kyotodb.cpp
+
+commit c999e816b55459e3e7dd30456e65bc6e146cbfe3
+Author: Peng Wu <alexepico@gmail.com>
+Date:   2022-09-07 16:19:31 +0800
+
+    Write ChewingLargeTable2::search_suggesion method for Berkeley DB
+
+M	src/storage/chewing_large_table2_bdb.cpp
+M	src/storage/chewing_large_table2_bdb.h
+
+commit 054a3e03a45984eacb21777b961c66a9736d74ba
+Author: Peng Wu <alexepico@gmail.com>
+Date:   2022-09-02 18:41:09 +0800
+
+    Write ChewingTableEntry::search_suggestion method
+
+M	src/storage/chewing_large_table2.h
+M	src/storage/pinyin_phrase3.h
+
+commit 20ad271a95ff149422a55b8dbe985c114a5a27e4
+Author: Peng Wu <alexepico@gmail.com>
+Date:   2022-08-30 11:51:18 +0800
+
+    Fix Kyoto Cabinet usage
+
+M	src/pinyin.cpp
+M	src/storage/phrase_large_table3.h
+M	src/storage/phrase_large_table3_kyotodb.cpp
+
+commit 008794423b00488ee45fb204bf5c6fc5205475cb
+Author: Peng Wu <alexepico@gmail.com>
+Date:   2022-08-29 14:17:27 +0800
+
+    Fix pinyin.cpp
+
+M	src/pinyin.cpp
+M	src/storage/phrase_large_table3_bdb.cpp
+
+commit 3e857c0a978133ad1a59eec1788f5fd6f1e7f187
+Author: Peng Wu <alexepico@gmail.com>
+Date:   2022-08-26 17:19:57 +0800
+
+    Support prefix candidate
+
+M	src/pinyin.cpp
+M	src/pinyin.h
+
+commit 96aeb47a5e9b0f7069975ee2507d1e695fc3f4cd
+Author: Peng Wu <alexepico@gmail.com>
+Date:   2022-08-25 14:00:40 +0800
+
+    Write FacadePhraseTable3::search_suggestion method
+
+M	src/storage/facade_phrase_table3.h
+
+commit e5d4ca32ad8f7766d47d94ee40614b8bec6023c7
+Author: Peng Wu <alexepico@gmail.com>
+Date:   2022-08-25 13:37:02 +0800
+
+    Fix a typo
+
+M	src/storage/phrase_large_table3_kyotodb.cpp
+
+commit ef20489350ad3c1ba8f7805f27c19a3917bd6976
+Author: Peng Wu <alexepico@gmail.com>
+Date:   2022-07-26 16:18:39 +0800
+
+    Write search_suggestion method
+
+M	src/storage/chewing_large_table2_kyotodb.cpp
+M	src/storage/phrase_large_table3_bdb.cpp
+M	src/storage/phrase_large_table3_bdb.h
+M	src/storage/phrase_large_table3_kyotodb.cpp
+M	src/storage/phrase_large_table3_kyotodb.h
+
+commit bd0414a0eb1775c9e8831191f2474721b0e4d802
+Author: Peng Wu <alexepico@gmail.com>
+Date:   2022-07-15 11:13:50 +0800
+
+    Write compare_phrase function
+
+M	src/storage/phrase_large_table3_bdb.cpp
+M	src/storage/phrase_large_table3_kyotodb.cpp
+
+commit 2323c59d337ca56c585a8b58b855e84938ecfc27
+Author: Peng Wu <alexepico@gmail.com>
+Date:   2022-06-06 17:32:00 +0800
+
+    Use abort function instead of assert macro
+
+M	src/include/memory_chunk.h
+M	src/lookup/phonetic_lookup.h
+M	src/pinyin.cpp
+M	src/storage/chewing_large_table.cpp
+M	src/storage/chewing_large_table2.cpp
+M	src/storage/chewing_large_table2_bdb.cpp
+M	src/storage/chewing_large_table2_kyotodb.cpp
+M	src/storage/flexible_ngram_bdb.h
+M	src/storage/ngram.cpp
+M	src/storage/phrase_index.cpp
+M	src/storage/phrase_index_logger.h
+M	src/storage/phrase_large_table2.cpp
+M	src/storage/pinyin_parser2.cpp
+M	src/storage/table_info.cpp
+M	src/storage/zhuyin_parser2.cpp
+M	src/zhuyin.cpp
+M	tests/storage/test_table_info.cpp
+M	utils/storage/import_interpolation.cpp
+M	utils/training/gen_k_mixture_model.cpp
+M	utils/training/import_k_mixture_model.cpp
+M	utils/training/k_mixture_model.h
+M	utils/training/k_mixture_model_to_interpolation.cpp
+M	utils/utils_helper.h
+
+commit 5f3df104b5ac0c3497a48cfc476eb3eedf1e543b
+Author: Peng Wu <alexepico@gmail.com>
+Date:   2022-06-06 11:29:16 +0800
+
+    Use check_result macro in tests directory
+
+M	tests/include/test_memory_chunk.cpp
+M	tests/lookup/test_pinyin_lookup.cpp
+M	tests/storage/test_flexible_ngram.cpp
+M	tests/storage/test_ngram.cpp
+M	tests/storage/test_phrase_index.cpp
+M	tests/storage/test_phrase_index_logger.cpp
+M	tests/storage/test_table_info.cpp
+
+commit a307b3e60b0b93310eb7efd165659d84d8752a56
+Author: Peng Wu <alexepico@gmail.com>
+Date:   2022-06-02 13:17:38 +0800
+
+    Use check_result macro in utils directory
+
+M	utils/storage/import_interpolation.cpp
+M	utils/training/estimate_interpolation.cpp
+M	utils/training/estimate_k_mixture_model.cpp
+M	utils/training/eval_correction_rate.cpp
+M	utils/training/export_k_mixture_model.cpp
+M	utils/training/gen_deleted_ngram.cpp
+M	utils/training/gen_k_mixture_model.cpp
+M	utils/training/gen_ngram.cpp
+M	utils/training/import_k_mixture_model.cpp
+M	utils/training/k_mixture_model.h
+M	utils/training/k_mixture_model_to_interpolation.cpp
+M	utils/training/merge_k_mixture_model.cpp
+M	utils/training/prune_k_mixture_model.cpp
+M	utils/training/validate_k_mixture_model.cpp
+M	utils/utils_helper.h
+
+commit 706188e5080f29665ecd41791df611f4e3a6e248
+Author: Peng Wu <alexepico@gmail.com>
+Date:   2022-06-01 11:47:23 +0800
+
+    Use check_result macro in src directory
+
+M	src/lookup/phonetic_lookup.cpp
+M	src/lookup/phonetic_lookup.h
+M	src/lookup/pinyin_lookup2.cpp
+M	src/pinyin.cpp
+M	src/pinyin_internal.h
+M	src/storage/chewing_large_table.h
+M	src/storage/chewing_large_table2_kyotodb.cpp
+M	src/storage/flexible_ngram.h
+M	src/storage/flexible_ngram_kyotodb.h
+M	src/storage/ngram.cpp
+M	src/storage/ngram.h
+M	src/storage/ngram_bdb.cpp
+M	src/storage/ngram_kyotodb.cpp
+M	src/storage/phrase_large_table3.h
+M	src/storage/phrase_large_table3_kyotodb.cpp
+M	src/zhuyin.cpp
+
+commit eea629ed12aa44600e681427f543ef181a4653d0
+Author: Peng Wu <alexepico@gmail.com>
+Date:   2022-05-30 13:44:50 +0800
+
+    Update Makefile.am
+
+M	src/include/Makefile.am
+
+commit caaeaf4f69869c272a9944b90e0a9fbbce6d2663
+Author: Peng Wu <alexepico@gmail.com>
+Date:   2022-05-30 13:41:48 +0800
+
+    Write pinyin_utils.h
+
+A	src/include/pinyin_utils.h
+
+commit 7af8e370d2bc470d1633a53a49e2a2cebe57d5ba
+Author: Peng Wu <alexepico@gmail.com>
+Date:   2022-05-07 11:38:54 +0800
+
+    Update make-check.yml
+
+M	.github/workflows/make-check.yml
+
 commit 3cc27bd3759a6791c6fbdb0ad3a2f6e2dd07260e
 Author: Peng Wu <alexepico@gmail.com>
 Date:   2022-04-13 14:04:05 +0800
