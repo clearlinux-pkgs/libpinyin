@@ -1,3 +1,101 @@
+commit abf1963123fae857fe4d845ddd9ae17b84b9c201
+Author: Peng Wu <alexepico@gmail.com>
+Date:   2023-01-03 16:35:44 +0800
+
+    Update NEWS
+
+M	NEWS
+
+commit b0cc782f38e4ab385fce88a8e26881eb44edb898
+Author: Peng Wu <alexepico@gmail.com>
+Date:   2023-01-03 15:47:55 +0800
+
+    Bump version 2.8.0
+
+M	configure.ac
+
+commit 087a773a22935e33f9c616756ff8f963cfe3d6db
+Author: Peng Wu <alexepico@gmail.com>
+Date:   2022-11-30 09:27:23 +0800
+
+    Add license header to unaligned_memory.h
+
+M	src/include/unaligned_memory.h
+
+commit 0aa6b1dff140cd7bdc3f200752e1e9d8569680de
+Author: Peng Wu <alexepico@gmail.com>
+Date:   2022-11-29 16:33:03 +0800
+
+    Update class MemoryChunk
+
+M	src/include/memory_chunk.h
+
+commit df10f4f6f04cfe37e30b23e1da12dc3d2448559f
+Author: Matias Larsson <matias.larsson@matthews.se>
+Date:   2022-11-25 13:06:20 +0100
+
+    Fixup: fix build error
+    
+    Add the new header file to noinst_HEADERS.
+
+M	src/include/Makefile.am
+
+commit 8bcea4710bd328ef74dc852d9fdffb3c47ed8abe
+Author: Matias Larsson <matias.larsson@matthews.se>
+Date:   2022-11-24 18:22:55 +0100
+
+    Fix libpinyin crash on ARMv7
+    
+    Fix the alignment trap in get_unigram_frequency(). Fix also other
+    places where this same trap could happen (depending on compiler
+    and surrounding code).
+    
+    The trap happened when the ARM GCC generated a SIMD instruction
+    (specifically VLDR) to load 32 bits in a single instruction, and
+    when the memory address was not aligned to 32 bits. VLDR traps if
+    the address is not aligned.
+    
+    GCC generated the instruction because of the cast to uint32 from
+    the address. The fix is to allocate a uint32 variable in stack and
+    use memcpy to copy the data to that variable. This way we ensure
+    that appropriate instructions are generated.
+    
+    **Links**
+    
+    About the issue with GCC:
+    https://trust-in-soft.com/blog/2020/04/06/gcc-always-assumes-aligned-pointer-accesses/
+    
+    How Linux does it:
+    https://elixir.bootlin.com/linux/v5.10.155/source/include/linux/unaligned/memmove.h#L13
+    
+    ARM documentation:
+    https://documentation-service.arm.com/static/5f8dc043f86e16515cdbbc92?token=
+        See 'A3.2.1 Unaligned data access'
+
+M	src/include/memory_chunk.h
+A	src/include/unaligned_memory.h
+M	src/storage/chewing_large_table.cpp
+M	src/storage/ngram.cpp
+M	src/storage/phrase_index.cpp
+M	src/storage/phrase_index.h
+M	src/storage/phrase_large_table2.cpp
+
+commit 521340f02907dae96f6f13dbf7997a34ebe864f2
+Author: Matias Larsson <matias.larsson@matthews.se>
+Date:   2022-11-24 18:08:06 +0100
+
+    Fix segmentation fault on ARMv7
+
+M	src/include/memory_chunk.h
+
+commit 21cc7efc2b9eb954395a0efc7841d37c4cee3d71
+Author: Peng Wu <alexepico@gmail.com>
+Date:   2022-11-18 13:51:44 +0800
+
+    Use Fedora rawhide container image
+
+M	.github/workflows/make-check.yml
+
 commit 872bfa1532e4f7f95b63f03efac2d0b2dc601374
 Author: Peng Wu <alexepico@gmail.com>
 Date:   2022-10-19 14:03:42 +0800
