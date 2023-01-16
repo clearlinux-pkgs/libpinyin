@@ -1,3 +1,37 @@
+commit de5bd732f9a6993938ce8fdcea9ecf7a00319c47
+Author: Peng Wu <alexepico@gmail.com>
+Date:   2023-01-16 12:04:32 +0800
+
+    Update NEWS
+
+M	NEWS
+
+commit 7580478f8bccca5bd17bd53097dbb0502da458bc
+Author: Peng Wu <alexepico@gmail.com>
+Date:   2023-01-16 12:03:51 +0800
+
+    Bump version 2.8.1
+
+M	configure.ac
+
+commit 5714a411912aa499c6c3c34d9eae0db2066abbf4
+Author: Peng Wu <alexepico@gmail.com>
+Date:   2023-01-14 10:03:21 +0800
+
+    Update table.conf.in
+
+M	data/table.conf.in
+
+commit 4730a921d7933af06f8292e3655d9b06be82b4d7
+Author: Peng Wu <alexepico@gmail.com>
+Date:   2023-01-14 09:56:46 +0800
+
+    Fix code style
+
+M	src/include/unaligned_memory.h
+M	src/storage/phrase_index.cpp
+M	src/storage/phrase_index.h
+
 commit abf1963123fae857fe4d845ddd9ae17b84b9c201
 Author: Peng Wu <alexepico@gmail.com>
 Date:   2023-01-03 16:35:44 +0800
