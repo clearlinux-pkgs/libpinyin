@@ -1,3 +1,89 @@
+commit 6bcb153cb6eb56a6c6f27fe931857fb5e7f3c270
+Author: Peng Wu <alexepico@gmail.com>
+Date:   2024-08-13 15:14:29 +0800
+
+    Update NEWS
+
+M	NEWS
+
+commit ed3ecdc3c69473e708e7d42f28ae68d80c5ff28e
+Author: Peng Wu <alexepico@gmail.com>
+Date:   2024-08-07 12:58:43 +0800
+
+    Fix export bigram phrase
+
+M	src/pinyin.cpp
+
+commit b56d3375921238ac990b5251b220f292e6dfdd61
+Author: Peng Wu <alexepico@gmail.com>
+Date:   2024-07-31 11:18:42 +0800
+
+    Fix warnings
+
+M	src/lookup/phonetic_lookup_heap.h
+M	src/pinyin.cpp
+M	src/storage/phrase_large_table2.cpp
+M	src/storage/pinyin_phrase3.h
+
+commit 23c1d14b771289deb6b19b6ce1a9788d6666a288
+Author: Peng Wu <alexepico@gmail.com>
+Date:   2024-07-31 10:41:38 +0800
+
+    Bump version 2.9.91
+
+M	configure.ac
+
+commit b34e4015dc83f717debf5f8169c46e570d44ab62
+Author: Peng Wu <alexepico@gmail.com>
+Date:   2024-07-30 09:45:02 +0800
+
+    Update libpinyin.ver
+
+M	src/libpinyin.ver
+
+commit dc0c818737b145d6d77c238ca0003b8e521d6860
+Author: Peng Wu <alexepico@gmail.com>
+Date:   2024-07-29 16:03:56 +0800
+
+    Support to export bigram phrase
+
+M	src/pinyin.cpp
+M	src/pinyin.h
+
+commit a69a069a73aa34d6398c67184541c7f635edb261
+Author: Peng Wu <alexepico@gmail.com>
+Date:   2024-07-03 09:53:07 +0800
+
+    Update pinyin.cpp
+
+M	src/pinyin.cpp
+
+commit 9393d69535c4bb2ccd5967fa47b12436b7b37711
+Author: Peng Wu <alexepico@gmail.com>
+Date:   2024-07-03 09:52:08 +0800
+
+    Update class UserTableInfo
+
+M	src/storage/table_info.cpp
+M	src/storage/table_info.h
+
+commit 4604435480d4b9e4f2f61106b550801012255d14
+Author: Daisuke Fujimura (fd0) <booleanlabel@gmail.com>
+Date:   2024-05-26 13:04:59 +0900
+
+    Build shared library on Windows
+
+M	configure.ac
+M	src/Makefile.am
+
+commit 429a768f3bc5b63b85dd875f7839d54f02fbc67b
+Author: Bernhard M. Wiedemann <bernhard+gitcommit lsmod.de>
+Date:   2023-10-09 14:50:20 +0200
+
+    Free memory after use
+
+M	utils/storage/gen_binary_files.cpp
+
 commit de5bd732f9a6993938ce8fdcea9ecf7a00319c47
 Author: Peng Wu <alexepico@gmail.com>
 Date:   2023-01-16 12:04:32 +0800
