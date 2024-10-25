@@ -42,6 +42,7 @@ libpinyin.so.15:pinyin_get_sentence@@LIBPINYIN
 libpinyin.so.15:pinyin_get_zhuyin_string@@LIBPINYIN
 libpinyin.so.15:pinyin_guess_candidates@@LIBPINYIN
 libpinyin.so.15:pinyin_guess_predicted_candidates@@LIBPINYIN
+libpinyin.so.15:pinyin_guess_predicted_candidates_with_punctuations@@LIBPINYIN
 libpinyin.so.15:pinyin_guess_sentence@@LIBPINYIN
 libpinyin.so.15:pinyin_guess_sentence_with_prefix@@LIBPINYIN
 libpinyin.so.15:pinyin_in_chewing_keyboard@@LIBPINYIN
