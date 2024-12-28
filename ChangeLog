@@ -1,3 +1,35 @@
+commit 1ac1ea17c7e02d71f53e33d92ccb2c40a3e3e964
+Author: Peng Wu <alexepico@gmail.com>
+Date:   2024-12-17 10:33:15 +0800
+
+    Update NEWS
+
+M	NEWS
+
+commit d4c3641bf0ff701369b700c911f93b9ae5445064
+Author: Peng Wu <alexepico@gmail.com>
+Date:   2024-12-17 10:31:26 +0800
+
+    Bump version 2.9.93
+
+M	configure.ac
+
+commit b84ea7a5186480e7e50a3a85ab492002c004a4aa
+Author: Peng Wu <alexepico@gmail.com>
+Date:   2024-12-17 10:22:58 +0800
+
+    Update gen_binary_files.cpp
+
+M	utils/storage/gen_binary_files.cpp
+
+commit 88bb5213e97a1987cd2e89dbe70e48c7b51291dc
+Author: Peng Wu <alexepico@gmail.com>
+Date:   2024-12-17 10:21:53 +0800
+
+    Update Makefile.am
+
+M	data/Makefile.am
+
 commit 8828881771df14a88a42b3a9e52b38bb92612c05
 Author: Peng Wu <alexepico@gmail.com>
 Date:   2024-10-21 11:47:14 +0800
