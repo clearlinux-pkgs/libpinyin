@@ -1,3 +1,19 @@
+commit 1b36fdb595f8a33a597d0b1538f54b47080d4d46
+Author: Peng Wu <alexepico@gmail.com>
+Date:   2025-02-08 15:01:09 +0800
+
+    Update NEWS
+
+M	NEWS
+
+commit fc32e4d4e7ae3ae425f10b44ba9242df7d63de68
+Author: Peng Wu <alexepico@gmail.com>
+Date:   2025-02-08 14:57:28 +0800
+
+    Bump version 2.10.0
+
+M	configure.ac
+
 commit 1ac1ea17c7e02d71f53e33d92ccb2c40a3e3e964
 Author: Peng Wu <alexepico@gmail.com>
 Date:   2024-12-17 10:33:15 +0800
