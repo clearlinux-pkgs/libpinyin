@@ -1,3 +1,27 @@
+commit a6f4d3c239883b5e1dd0770ab2b433042845e9c9
+Author: Peng Wu <alexepico@gmail.com>
+Date:   2025-03-24 10:36:12 +0800
+
+    Bump version 2.10.1
+
+M	configure.ac
+
+commit 3ea840891c8c88719a334f6c5eea63d68e59914b
+Author: Peng Wu <alexepico@gmail.com>
+Date:   2025-03-24 10:33:30 +0800
+
+    Update NEWS
+
+M	NEWS
+
+commit b9bb33de5ed89b304015377f99d0827ea5929532
+Author: Peng Wu <alexepico@gmail.com>
+Date:   2025-03-14 11:35:38 +0800
+
+    Fix some typo in the code
+
+M	src/pinyin.cpp
+
 commit 1b36fdb595f8a33a597d0b1538f54b47080d4d46
 Author: Peng Wu <alexepico@gmail.com>
 Date:   2025-02-08 15:01:09 +0800
