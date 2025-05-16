@@ -1,3 +1,36 @@
+commit 8f65efdc6d5b5f7a398fc68838c1ff2f92f8af8c
+Author: Peng Wu <alexepico@gmail.com>
+Date:   2025-05-15 15:49:47 +0800
+
+    Update NEWS
+
+M	NEWS
+
+commit 4e3311728bb1dd6400765eb3c59b35d447460bec
+Author: Peng Wu <alexepico@gmail.com>
+Date:   2025-05-15 15:48:01 +0800
+
+    Bump version 2.10.2
+
+M	configure.ac
+
+commit 8790e17c83b30197a6947408217ba0026df90149
+Author: Peng Wu <alexepico@gmail.com>
+Date:   2025-05-07 10:52:49 +0800
+
+    Fix CI tests
+
+M	.github/workflows/make-check.yml
+
+commit f3e720527c42179058f82b0024d1eef737de88b5
+Author: czxdev <36617515+czxdev@users.noreply.github.com>
+Date:   2025-04-29 11:43:41 +0800
+
+    Fix memory leaks in kyotodb based tables
+
+M	src/storage/chewing_large_table2_kyotodb.cpp
+M	src/storage/phrase_large_table3_kyotodb.cpp
+
 commit a6f4d3c239883b5e1dd0770ab2b433042845e9c9
 Author: Peng Wu <alexepico@gmail.com>
 Date:   2025-03-24 10:36:12 +0800
